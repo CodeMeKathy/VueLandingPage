@@ -139,7 +139,7 @@ a {
     right: 0;
     color: white;
     width: 40%;
-    padding: 0rem 40px 1rem 0px;
+    padding: 0rem 10px 1rem 0px;
   }
   .nav-menu-absolute {
     position: absolute;
