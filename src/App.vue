@@ -1,28 +1,52 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <home></home>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
-  name: "app",
-  components: {
-    HelloWorld
+  methods: {
+    updateUserAgent() {
+      this.loadUserAgent(this.getUserAgent())
+    },
+    getUserAgent() {
+      let userAgent = {}
+      userAgent.width = window.screen.width
+      userAgent.height = window.screen.height
+      userAgent.clientWidth =
+        window.innerWidth ||
+        document.documentElement.clientWidth ||
+        document.body.clientWidth
+      userAgent.clientHeight =
+        window.innerHeight ||
+        document.documentElement.clientHeight ||
+        document.body.clientHeight
+      return userAgent
+    }
+  },
+  created() {
+    let userAgent = {}
+    userAgent.width = window.screen.width
+    userAgent.height = window.screen.height
+    userAgent.clientWidth =
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth
+    userAgent.clientHeight =
+      window.innerHeight ||
+      document.documentElement.clientHeight ||
+      document.body.clientHeight
+    // userAgent.orientation = screen.orientation.type no safari support
+    this.loadUserAgent(userAgent)
+    window.addEventListener('resize', this.updateUserAgent)
   }
-};
+}
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
 }
 </style>
