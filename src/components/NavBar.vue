@@ -26,7 +26,7 @@
           alt="catch the wave"
           :src="require('@/assets/images/icons/branch.svg')"
         />
-        <router-link to="/about">catch the wave</router-link>
+        <router-link to="/about">come visit us</router-link>
       </div>
     </div>
   </nav>

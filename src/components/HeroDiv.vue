@@ -1,6 +1,9 @@
 <template>
-  <div class="hero-div container">
-    <!-- <h1>Hello World</h1> -->
+  <div class="hero-div">
+    <div class="wrapper">
+      <h1>PHANTOM III</h1>
+      <button>How it Works</button>
+    </div>
   </div>
 </template>
 
@@ -19,5 +22,9 @@ export default {
   background-image: url('../assets/images/Piggy-Pink.jpg');
   background-size: cover;
   height: 100vh;
+  display: flex;
+}
+.wrapper {
+  justify-content: center;
 }
 </style>
