@@ -7,7 +7,7 @@ dist
 .env.*.local
 
 # Config files
-.config.js
+*.config.js
 
 # Log files
 npm-debug.log*
