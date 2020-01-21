@@ -14,13 +14,7 @@
         />-->
       </div>
       <div class="right-col">
-        <img
-          class="hero-image push"
-          src="../assets/images/CherryBlossomTransparent.png"
-          alt
-          width="500"
-          height="300"
-        />
+        <img class="hero-image push" src="../assets/images/CherryBlossomTransparent.png" alt />
       </div>
     </div>
   </div>
@@ -79,7 +73,7 @@ export default {
   border-radius: 5px;
 }
 .left-col {
-  justify-content: center;
+  padding-left: 20px;
   align-self: center;
 }
 /* .right-col {
@@ -89,11 +83,16 @@ export default {
 } */
 img.hero-image {
   justify-self: end;
+  width: 500px;
+  height: 300px;
 }
 
-/* .push {
-  margin-left: auto;
-} */
+@media only screen and (max-width: 947px) {
+  img.hero-image {
+    width: 350px;
+    height: 300px;
+  }
+}
 </style>
 
 //-ms-transform: rotate(180deg); /* IE 9 */
