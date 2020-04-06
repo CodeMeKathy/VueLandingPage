@@ -19,10 +19,10 @@
       <div class="nav-item">
         <img
           id="branchIcon"
-          alt="catch the wave"
+          alt="Pink Branch Icon"
           :src="require('@/assets/images/icons/branch.svg')"
         />
-        <router-link to="/about">come visit us</router-link>
+        <router-link to="/about">Contact us</router-link>
       </div>
     </div>
   </nav>
@@ -109,6 +109,7 @@ export default {
 }
 .nav-item img {
   margin-right: 9px;
+  height: 15px;
 }
 a {
   color: inherit;
