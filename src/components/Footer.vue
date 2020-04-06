@@ -17,7 +17,8 @@ export default {
   justify-content: space-between;
   padding: 40px 10px;
   height: 10vh;
-  background: url("../assets/images/SeaBlue.jpg");
-  color: whitesmoke;
+  /* background: url("../assets/images/SeaBlue.jpg"); */
+  background-color: hsl(192, 100%, 9%);
+  color: #ff52bf;
 }
 </style>

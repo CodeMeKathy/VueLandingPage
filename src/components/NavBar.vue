@@ -2,10 +2,10 @@
   <nav id="nav-white">
     <div id="nav-logo">
       <div>
-        <img id="luxLogo" alt="Lux logo" :src="require('@/assets/logo.png')" />
+        <img id="luxLogo" alt="Lux logo" :src="require('@/assets/images/logo.svg')" />
       </div>
       <div id="logo-text">
-        <span class="logo-font" id="logoFont">Lux</span>
+        <span class="logo-font" id="logoFont"></span>
       </div>
     </div>
     <div id="nav-menu" class="nav-menu-absolute">
@@ -13,11 +13,7 @@
         <router-link to="/" exact>start with why</router-link>
       </div>
       <div class="nav-item">
-        <img
-          id="userIcon"
-          alt="you come first"
-          :src="require('@/assets/images/icons/person.svg')"
-        />
+        <img id="userIcon" alt="you come first" :src="require('@/assets/images/icons/person.svg')" />
         <router-link to="/learnmore">you come first</router-link>
       </div>
       <div class="nav-item">
@@ -34,50 +30,50 @@
 
 <script>
 export default {
-  name: 'WebNav',
+  name: "WebNav",
   mounted() {
-    window.onscroll = this.stickMenu
+    window.onscroll = this.stickMenu;
   },
   methods: {
     stickMenu() {
-      let whiteBranchIconSrc = require('@/assets/images/icons/branch.svg')
-      let blackBranchIconSrc = require('@/assets/images/icons/branchAlt.svg')
-      let whiteUserIconSrc = require('@/assets/images/icons/person.svg')
-      let blackUserIconSrc = require('@/assets/images/icons/personAlt.svg')
-      let whiteLuxLogoSrc = require('@/assets/logo.png')
-      let blackLuxLogoSrc = require('@/assets/logo.png')
+      let whiteBranchIconSrc = require("@/assets/images/icons/branch.svg");
+      let blackBranchIconSrc = require("@/assets/images/icons/branchAlt.svg");
+      let whiteUserIconSrc = require("@/assets/images/icons/person.svg");
+      let blackUserIconSrc = require("@/assets/images/icons/personAlt.svg");
+      let whiteLuxLogoSrc = require("@/assets/images/logo.svg");
+      let blackLuxLogoSrc = require("@/assets/images/logo.svg");
 
-      let navMenu = document.getElementById('nav-menu')
+      let navMenu = document.getElementById("nav-menu");
       let pokus =
         window.innerHeight ||
         document.documentElement.clientHeight ||
-        document.body.clientHeight
-      let sticker = pokus - navMenu.offsetHeight
-      let userIcon = document.getElementById('userIcon')
-      let branchIcon = document.getElementById('branchIcon')
-      let luxLogo = document.getElementById('luxLogo')
-      let logoFont = document.getElementById('logoFont')
+        document.body.clientHeight;
+      let sticker = pokus - navMenu.offsetHeight;
+      let userIcon = document.getElementById("userIcon");
+      let branchIcon = document.getElementById("branchIcon");
+      let luxLogo = document.getElementById("luxLogo");
+      let logoFont = document.getElementById("logoFont");
 
       if (window.pageYOffset >= sticker) {
-        navMenu.classList.remove('nav-menu-absolute')
-        navMenu.classList.add('sticky')
-        logoFont.classList.add('sticky-logo')
+        navMenu.classList.remove("nav-menu-absolute");
+        navMenu.classList.add("sticky");
+        logoFont.classList.add("sticky-logo");
         //! Icons transition to black color icons
-        userIcon.src = blackUserIconSrc
-        branchIcon.src = blackBranchIconSrc
-        luxLogo.src = blackLuxLogoSrc
+        userIcon.src = blackUserIconSrc;
+        branchIcon.src = blackBranchIconSrc;
+        luxLogo.src = blackLuxLogoSrc;
       } else {
-        navMenu.classList.add('nav-menu-absolute')
-        navMenu.classList.remove('sticky')
+        navMenu.classList.add("nav-menu-absolute");
+        navMenu.classList.remove("sticky");
         //! Icons transition back to white color icons
-        userIcon.src = whiteUserIconSrc
-        branchIcon.src = whiteBranchIconSrc
-        luxLogo.src = whiteLuxLogoSrc
-        logoFont.classList.remove('sticky-logo')
+        userIcon.src = whiteUserIconSrc;
+        branchIcon.src = whiteBranchIconSrc;
+        luxLogo.src = whiteLuxLogoSrc;
+        logoFont.classList.remove("sticky-logo");
       }
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -85,7 +81,7 @@ export default {
   height: 0px;
   display: block;
   justify-content: space-between;
-  color: white;
+  color: #ff52bf;
 }
 #nav-logo {
   display: flex;
@@ -137,7 +133,7 @@ a {
   }
   #nav-menu {
     right: 0;
-    color: white;
+    color: #ff52bf;
     width: 40%;
     padding: 0rem 10px 1rem 0px;
   }

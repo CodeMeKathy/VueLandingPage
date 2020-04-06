@@ -16,7 +16,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .business-div {
-  background-image: url('../assets/images/Jaipur.jpg');
+  /* background-image: url('../assets/images/Jaipur.jpg'); */
   background-size: cover;
   height: 100vh;
 }
