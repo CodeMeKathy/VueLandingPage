@@ -1,8 +1,8 @@
 <template>
-  <nav id="nav-white">
-    <div id="nav-logo">
+  <nav id="nav-color">
+    <div id="nav-logo-div">
       <div>
-        <img id="luxLogo" alt="Lux logo" :src="require('@/assets/images/logo.svg')" />
+        <img id="navLogo" alt="Lux logo" :src="require('@/assets/images/logo.svg')" />
       </div>
       <div id="logo-text">
         <span class="logo-font" id="logoFont"></span>
@@ -10,11 +10,11 @@
     </div>
     <div id="nav-menu" class="nav-menu-absolute">
       <div class="nav-item">
-        <router-link to="/" exact>start with why</router-link>
+        <router-link to="/" exact>start with connections</router-link>
       </div>
       <div class="nav-item">
         <img id="userIcon" alt="you come first" :src="require('@/assets/images/icons/person.svg')" />
-        <router-link to="/learnmore">you come first</router-link>
+        <router-link to="/learnmore">what we do</router-link>
       </div>
       <div class="nav-item">
         <img
@@ -22,7 +22,7 @@
           alt="Pink Branch Icon"
           :src="require('@/assets/images/icons/branch.svg')"
         />
-        <router-link to="/about">Contact us</router-link>
+        <router-link to="/about">contact us</router-link>
       </div>
     </div>
   </nav>
@@ -36,12 +36,12 @@ export default {
   },
   methods: {
     stickMenu() {
-      let whiteBranchIconSrc = require("@/assets/images/icons/branch.svg");
+      let colorBranchIconSrc = require("@/assets/images/icons/branch.svg");
       let blackBranchIconSrc = require("@/assets/images/icons/branchAlt.svg");
-      let whiteUserIconSrc = require("@/assets/images/icons/person.svg");
+      let colorUserIconSrc = require("@/assets/images/icons/person.svg");
       let blackUserIconSrc = require("@/assets/images/icons/personAlt.svg");
-      let whiteLuxLogoSrc = require("@/assets/images/logo.svg");
-      let blackLuxLogoSrc = require("@/assets/images/logo.svg");
+      let colorNavlogoSrc = require("@/assets/images/logo.svg");
+      let blacknavlogoSrc = require("@/assets/images/logo-alt.svg");
 
       let navMenu = document.getElementById("nav-menu");
       let pokus =
@@ -51,24 +51,24 @@ export default {
       let sticker = pokus - navMenu.offsetHeight;
       let userIcon = document.getElementById("userIcon");
       let branchIcon = document.getElementById("branchIcon");
-      let luxLogo = document.getElementById("luxLogo");
+      let navLogo = document.getElementById("navLogo");
       let logoFont = document.getElementById("logoFont");
 
       if (window.pageYOffset >= sticker) {
         navMenu.classList.remove("nav-menu-absolute");
         navMenu.classList.add("sticky");
         logoFont.classList.add("sticky-logo");
-        //! Icons transition to black color icons
+        //! Icons transition to black icons
         userIcon.src = blackUserIconSrc;
         branchIcon.src = blackBranchIconSrc;
-        luxLogo.src = blackLuxLogoSrc;
+        navLogo.src = blacknavlogoSrc;
       } else {
         navMenu.classList.add("nav-menu-absolute");
         navMenu.classList.remove("sticky");
-        //! Icons transition back to white color icons
-        userIcon.src = whiteUserIconSrc;
-        branchIcon.src = whiteBranchIconSrc;
-        luxLogo.src = whiteLuxLogoSrc;
+        //! Icons transition back to pink color icons
+        userIcon.src = colorUserIconSrc;
+        branchIcon.src = colorBranchIconSrc;
+        navLogo.src = colorNavlogoSrc;
         logoFont.classList.remove("sticky-logo");
       }
     }
@@ -77,21 +77,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#nav-white {
+#nav-color {
   height: 0px;
   display: block;
   justify-content: space-between;
   color: #ff52bf;
 }
-#nav-logo {
+#nav-logo-div {
   display: flex;
   padding: 1.5rem 0px 0.5rem 2rem;
   width: 160px;
 }
-#luxLogo {
+#navLogo {
   padding-right: 0.45rem;
   // padding-top: 0.3rem;
-  height: 75px;
+  height: 35px;
 }
 #logo-text {
   font-weight: 400;
@@ -120,13 +120,13 @@ a {
   font-weight: 400;
 }
 @media only screen and (min-width: 64rem) {
-  // #nav-white {
+  // #nav-color {
   //   height: 100vh;
   //   position: absolute;
   //   top: 0;
   //   left: 0;
   // }
-  #nav-logo {
+  #nav-logo-div {
     // padding: 2rem 0px 30px 2rem;
     width: 160px;
     position: fixed;
@@ -146,10 +146,12 @@ a {
     position: fixed;
     top: 0;
     bottom: auto;
-    color: black !important;
+    color: #00252e !important;
+    padding-bottom: 0px !important;
+    padding-top: 15px !important;
   }
   .sticky-logo {
-    color: black;
+    color: #00252e;
   }
   .sticky-image {
     height: 16px;
