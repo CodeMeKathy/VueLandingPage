@@ -2,7 +2,7 @@
   <nav id="nav-color">
     <div id="nav-logo-div">
       <div>
-        <img id="navLogo" alt="Lux logo" :src="require('@/assets/images/logo.svg')" />
+        <img id="navLogo" alt="Nav logo" :src="require('@/assets/images/logo.svg')" />
       </div>
       <div id="logo-text">
         <span class="logo-font" id="logoFont"></span>
@@ -19,7 +19,7 @@
       <div class="nav-item">
         <img
           id="branchIcon"
-          alt="Pink Branch Icon"
+          alt="Colored Branch Icon"
           :src="require('@/assets/images/icons/branch.svg')"
         />
         <router-link to="/about">contact us</router-link>
@@ -40,8 +40,8 @@ export default {
       let blackBranchIconSrc = require("@/assets/images/icons/branchAlt.svg");
       let colorUserIconSrc = require("@/assets/images/icons/person.svg");
       let blackUserIconSrc = require("@/assets/images/icons/personAlt.svg");
-      let colorNavlogoSrc = require("@/assets/images/logo.svg");
-      let blacknavlogoSrc = require("@/assets/images/logo-alt.svg");
+      let colorNavLogoSrc = require("@/assets/images/logo.svg");
+      let blackNavLogoSrc = require("@/assets/images/logo-alt.svg");
 
       let navMenu = document.getElementById("nav-menu");
       let pokus =
@@ -61,14 +61,14 @@ export default {
         //! Icons transition to black icons
         userIcon.src = blackUserIconSrc;
         branchIcon.src = blackBranchIconSrc;
-        navLogo.src = blacknavlogoSrc;
+        navLogo.src = blackNavLogoSrc;
       } else {
         navMenu.classList.add("nav-menu-absolute");
         navMenu.classList.remove("sticky");
         //! Icons transition back to pink color icons
         userIcon.src = colorUserIconSrc;
         branchIcon.src = colorBranchIconSrc;
-        navLogo.src = colorNavlogoSrc;
+        navLogo.src = colorNavLogoSrc;
         logoFont.classList.remove("sticky-logo");
       }
     }
