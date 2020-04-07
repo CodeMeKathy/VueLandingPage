@@ -1,14 +1,16 @@
 <template>
   <div class="hero-div">
     <div class="wrapper row">
-      <div class="left-col">
+      <div class="col-left col-1-of-2">
         <h1 class="hero-title">
           Build The Community
           <br />Your Fans Will Love
         </h1>
-        <p
-          class="hero-sub-title"
-        >Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+        <p class="hero-sub-title util-margin-big">
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
         <button class="hero-btn">Get Started For Free</button>
         <!-- <img
           class="hero-image"
@@ -18,8 +20,12 @@
           height="200"
         />-->
       </div>
-      <div class="right-col">
-        <img class="hero-image push" src="../assets/images/illustration-mockups.svg" alt />
+      <div class="col-right col-1-of-2">
+        <img
+          class="hero-image"
+          src="../assets/images/illustration-mockups.svg"
+          alt
+        />
       </div>
     </div>
   </div>
@@ -27,17 +33,20 @@
 
 <script>
 export default {
-  name: "HeroDiv"
+  name: 'HeroDiv'
   // props: {
 
   // }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
+
+@import '@/sass/main.scss';
+
 .hero-div {
-  background-image: url("../assets/images/bg-hero-desktop.svg");
+  background-image: url('../assets/images/bg-hero-desktop.svg');
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -57,16 +66,21 @@ export default {
 }
 .wrapper {
   display: flex;
-  width: 100vw;
-  align-self: center;
-  justify-content: space-between;
+  /* width: 100vw; */
 }
 .row {
   flex-direction: row !important;
-  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
 }
-.col {
-  flex-direction: column;
+.col-1-of-2 {
+  margin: auto 0;
+  padding: 5rem;
+  /* align-self: center; */
+  /* place-items: center; */
+  /* justify-items: center; */
+  /* flex-direction: column; */
+  /* width: 45%; */
 }
 .hero-btn {
   background-color: #ff52bf;
@@ -100,6 +114,5 @@ img.hero-image {
 }
 </style>
 
-// -ms-transform: rotate(180deg); /* IE 9 */
-  -webkit-transform: rotate(180deg); /* Safari prior 9.0 */
-  transform: rotate(180deg); /* Standard syntax */
+// -ms-transform: rotate(180deg); /* IE 9 */ -webkit-transform: rotate(180deg);
+/* Safari prior 9.0 */ transform: rotate(180deg); /* Standard syntax */
