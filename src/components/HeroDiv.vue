@@ -44,16 +44,26 @@ export default {
 <style scoped lang="scss">
 @import '@/sass/main.scss';
 
-.hero-div {
-  background-image: url('../assets/images/bg-hero-desktop.svg');
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  /* align-self: center; */
+.hero {
+  &-div {
+    background-image: url('../assets/images/bg-hero-desktop.svg');
+    background-size: cover;
+    background-color: hsl(193, 100%, 96%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+  &-sub-title {
+    width: 30rem;
+  }
+  &-image {
+    width: 80%;
+  }
 }
+
 .hero-title {
   text-transform: uppercase;
   /* color: black; */
@@ -65,7 +75,7 @@ export default {
 }
 .wrapper {
   display: flex;
-  /* width: 100vw; */
+  // width: 100vw;
 }
 .row {
   flex-direction: row !important;
@@ -74,7 +84,7 @@ export default {
 }
 .col-1-of-2 {
   margin: auto 0;
-  padding: 5rem;
+  padding: 6rem;
   /* align-self: center; */
   /* place-items: center; */
   /* justify-items: center; */
@@ -99,17 +109,17 @@ export default {
   justify-content: end;
   align-self: flex-end;
 } */
-img.hero-image {
-  justify-self: end;
-  width: 500px;
-  height: 300px;
-}
+// img.hero-image {
+//   justify-self: end;
+//   width: 500px;
+//   height: 300px;
+// }
 
 @media only screen and (max-width: 947px) {
-  img.hero-image {
-    width: 350px;
-    height: 300px;
-  }
+  // img.hero-image {
+  //   width: 350px;
+  //   height: 300px;
+  // }
 }
 </style>
 
