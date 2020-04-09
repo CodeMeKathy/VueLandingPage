@@ -3,8 +3,8 @@
     <div class="wrapper col">
       <div class="row features-box">
         <div class="col-1-of-2">
-          <h3 class="features-title util-margin-small">Grow Together</h3>
-          <p class="features-sub-title">
+          <h3 class="heading-secondary util-margin-small">Grow Together</h3>
+          <p class="heading-tertiary">
             Generate meaningful discussions with your audience and build a
             strong, loyal community. Think of the insightful conversations you
             miss out on with a feedback form.
@@ -20,10 +20,10 @@
       </div>
       <div class="row features-box">
         <div class="col-1-of-2 left">
-          <h3 class="features-title util-margin-small">
+          <h3 class="heading-secondary util-margin-small">
             Flowing Conversations
           </h3>
-          <p class="features-sub-title">
+          <p class="heading-tertiary">
             You wouldn't paginate a conversation in real life, so why do it
             online? Our threads have just-in-time loading for a more natural
             flow.
@@ -39,8 +39,8 @@
       </div>
       <div class="row features-box">
         <div class="col-1-of-2">
-          <h3 class="features-title util-margin-small">Your Users</h3>
-          <p class="features-sub-title">
+          <h3 class="heading-secondary util-margin-small">Your Users</h3>
+          <p class="heading-tertiary">
             It takes no time at all to integrate Huddle with your app's
             authentication solution. This means, once signed in to your app,
             your users can start chatting immediately.
