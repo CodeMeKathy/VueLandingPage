@@ -1,14 +1,16 @@
 <template>
   <div class="footer-div">
-    <div class="left-col">Lux © 2020</div>
-    <div class="right-col">Made by CodeMeKathy</div>
+    <div class="left-col">© 2020 Huddle</div>
+    <div class="right-col">
+      Made by CodeMeKathy && Designed by Frontend Mentors
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Footer"
-};
+  name: 'Footer'
+}
 </script>
 
 <style>
