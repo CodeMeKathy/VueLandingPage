@@ -13,7 +13,7 @@
         <div class="col-1-of-2">
           <img
             src="../assets/images/illustration-grow-together.svg"
-            class="features-image"
+            class="features-image-left"
             alt=""
           />
         </div>
@@ -32,7 +32,7 @@
         <div class="col-1-of-2">
           <img
             src="../assets/images/illustration-flowing-conversation.svg"
-            class="features-image-left"
+            class="features-image-right"
             alt=""
           />
         </div>
@@ -49,7 +49,7 @@
         <div class="col-1-of-2">
           <img
             src="../assets/images/illustration-your-users.svg"
-            class="features-image"
+            class="features-image-left"
             alt=""
           />
         </div>
@@ -83,11 +83,12 @@ export default {
 //   flex-direction: column;
 // }
 .features {
-  &-image {
+  &-image-left {
     width: 40%;
     float: right;
+    margin-top: -8rem;
   }
-  &-image-left {
+  &-image-right {
     width: 40%;
     float: left;
   }
