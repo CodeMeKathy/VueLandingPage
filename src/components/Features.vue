@@ -3,7 +3,9 @@
     <div class="wrapper col">
       <div class="row features-box">
         <div class="col-1-of-2">
-          <h3 class="features-box-heading-secondary heading-secondary util-margin-small">
+          <h3
+            class="features-box-heading-secondary heading-secondary util-margin-small"
+          >
             Grow Together
           </h3>
           <p class="features-box-heading-tertiary heading-tertiary">
@@ -22,7 +24,9 @@
       </div>
       <div class="row features-box">
         <div class="col-1-of-2 left">
-          <h3 class="features-box-heading-secondary heading-secondary util-margin-small">
+          <h3
+            class="features-box-heading-secondary heading-secondary util-margin-small"
+          >
             Flowing Conversations
           </h3>
           <p class="features-box-heading-tertiary heading-tertiary">
@@ -41,7 +45,9 @@
       </div>
       <div class="row features-box">
         <div class="col-1-of-2">
-          <h3 class="features-box-heading-secondary heading-secondary util-margin-small">
+          <h3
+            class="features-box-heading-secondary heading-secondary util-margin-small"
+          >
             Your Users
           </h3>
           <p class="features-box-heading-tertiary heading-tertiary">
@@ -118,7 +124,7 @@ export default {
   float: right !important;
 }
 
-.features-box{
+.features-box {
   &-heading-secondary {
     margin-top: 5.5rem;
   }

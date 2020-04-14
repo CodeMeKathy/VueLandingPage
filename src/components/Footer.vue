@@ -1,7 +1,7 @@
 <template>
   <div class="footer-div">
-    <div class="left-col heading-secondary">© 2020 Huddle</div>
-    <div class="right-col">
+    <div class="left-col heading-tertiary">© 2020 Huddle</div>
+    <div class="right-col heading-tertiary">
       Made by CodeMeKathy && Designed by Frontend Mentors
     </div>
   </div>
