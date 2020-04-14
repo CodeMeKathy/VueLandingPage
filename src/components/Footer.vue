@@ -1,6 +1,6 @@
 <template>
   <div class="footer-div">
-    <div class="left-col">© 2020 Huddle</div>
+    <div class="left-col heading-secondary">© 2020 Huddle</div>
     <div class="right-col">
       Made by CodeMeKathy && Designed by Frontend Mentors
     </div>
@@ -13,7 +13,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
+@import '@/sass/main.scss';
+
 .footer-div {
   display: flex;
   justify-content: space-between;
