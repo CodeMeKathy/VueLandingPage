@@ -4,7 +4,7 @@
       <div class="row features-box">
         <div class="col-1-of-2">
           <h3
-            class="features-box-heading-secondary heading-secondary util-margin-small"
+            class="features-box-heading-secondary heading-secondary util-margin-bottom-small"
           >
             Grow Together
           </h3>
@@ -25,7 +25,7 @@
       <div class="row features-box">
         <div class="col-1-of-2 left">
           <h3
-            class="features-box-heading-secondary heading-secondary util-margin-small"
+            class="features-box-heading-secondary heading-secondary util-margin-bottom-small"
           >
             Flowing Conversations
           </h3>
@@ -46,7 +46,7 @@
       <div class="row features-box">
         <div class="col-1-of-2">
           <h3
-            class="features-box-heading-secondary heading-secondary util-margin-small"
+            class="features-box-heading-secondary heading-secondary util-margin-bottom-small"
           >
             Your Users
           </h3>

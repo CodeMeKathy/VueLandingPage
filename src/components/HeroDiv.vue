@@ -2,11 +2,11 @@
   <div class="hero-div">
     <div class="wrapper row">
       <div class="col-left col-1-of-2">
-        <h1 class="hero-title util-margin-small">
+        <h1 class="hero-title util-margin-bottom-small">
           Build The Community
           <br />Your Fans Will Love
         </h1>
-        <p class="hero-sub-title util-margin-small">
+        <p class="hero-sub-title util-margin-bottom-small">
           Huddle re-imagines the way we build communities. You have a voice, but
           so does your audience. Create connections with your users as you
           engage in genuine discussion.
@@ -42,7 +42,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
 @import '@/sass/main.scss';
 
 .hero {
