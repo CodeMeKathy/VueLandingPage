@@ -10,9 +10,10 @@
       </div>
       <div class="row util-margin-small">
         <p>
-          <i class="util-margin-right-small fas fa-map-marker-alt"></i>Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Provident dignissimos possimus
-          blanditiis aliquam enim quam facere saepe nesciunt
+          <i class="util-margin-right-small fas fa-map-marker-alt"></i>Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Provident
+          dignissimos possimus aepe
+          nesciunt
         </p>
       </div>
       <div class="row">
@@ -23,25 +24,24 @@
       </div>
     </div>
     <div class="col footer-col-2">
-      <div class="row">About Us</div>
-      <div class="row">What We Do</div>
-      <div class="row">FAQ</div>
+      <div class="row footer-row">About Us</div>
+      <div class="row footer-row">What We Do</div>
+      <div class="row footer-row">FAQ</div>
     </div>
     <div class="col footer-col-3">
-      <div class="row">Career</div>
-      <div class="row">Blog</div>
-      <div class="row">Contact Us</div>
+      <div class="row footer-row">Career</div>
+      <div class="row footer-row">Blog</div>
+      <div class="row footer-row">Contact Us</div>
     </div>
     <div class="col footer-col-4">
       <i class="footer-icon fab fa-facebook-square"></i>
       <i class="footer-icon fab fa-twitter-square"></i>
       <i class="footer-icon fab fa-instagram-square"></i>
       <div class="col footer-col-5">
-        © Copyright 2020 Huddle <br> Made by CodeMeKathy <br>&& Designed by Frontend
-        Mentors
+        © Copyright 2020 Huddle Made by CodeMeKathy <br />&& Designed by
+        Frontend Mentors
       </div>
     </div>
-    <!-- <div class="row"></div> -->
   </div>
 </template>
 
@@ -69,27 +69,33 @@ export default {
   }
   &-icon {
     border-radius: 55%;
-    height: 16rem;
+    height: 12rem;
     margin: 0.75rem;
   }
   &-col-1 {
-    width: 25rem;
+    width: 50rem;
   }
   &-col-2 {
-    width: 15rem;
-    margin: 1.5rem;
+    width: 18rem;
+    margin: 5rem;
+    margin-right: 2rem;
   }
   &-col-3 {
-    width: 15rem;
-    margin: 1.5rem;
+    width: 18rem;
+    margin: 5rem;
+    margin-right: 3rem;
   }
   &-col-4 {
-    width: 15rem;
-    margin: 1.5rem;
+    width: 10rem;
+    margin: 4rem;
+    margin-right: 8rem;
   }
   &-col-5 {
     width: 40rem;
-    // margin-left: -20rem;
+    font-size: 0.8rem;
+   }
+  &-row {
+    padding: 0.5rem;
   }
 }
 .fa-phone-volume {
