@@ -84,7 +84,7 @@ export default {
 .features-div {
   /* background-image: url('../assets/images/Jaipur.jpg'); */
   // background-size: cover;
-  height: 275vh;
+  height: 255vh;
   width: 100vw;
   display: flex;
   justify-content: center;
