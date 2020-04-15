@@ -9,11 +9,10 @@
         />
       </div>
       <div class="row util-margin-small">
-        <p>
+        <p class="footer-location">
           <i class="util-margin-right-small fas fa-map-marker-alt"></i>Lorem
           ipsum dolor sit amet consectetur adipisicing elit. Provident
-          dignissimos possimus aepe
-          nesciunt
+          dignissimos possimus aepe nesciunt
         </p>
       </div>
       <div class="row">
@@ -75,10 +74,14 @@ export default {
   &-col-1 {
     width: 50rem;
   }
+  &-location {
+    width: 20rem;
+  }
   &-col-2 {
-    width: 18rem;
+    width: 20rem;
     margin: 5rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
   &-col-3 {
     width: 18rem;
@@ -93,7 +96,7 @@ export default {
   &-col-5 {
     width: 40rem;
     font-size: 0.8rem;
-   }
+  }
   &-row {
     padding: 0.5rem;
   }
