@@ -58,10 +58,12 @@ export default {
     display: flex;
     justify-content: space-between;
     padding: 10rem 5rem;
-    height: 35vh;
+    height: 25vh;
     /* background: url("../assets/images/SeaBlue.jpg"); */
     background-color: hsl(192, 100%, 9%);
     color: whitesmoke;
+    // z-index: 0;
+    // position: relative;
   }
   &-logo {
     height: 2rem;
