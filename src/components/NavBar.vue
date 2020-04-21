@@ -1,19 +1,30 @@
 <template>
   <nav id="nav-color">
+    <!-- Nav Logo Div Begins -->
     <div id="nav-logo-div">
       <div>
-        <img id="navLogo" alt="Nav logo" :src="require('@/assets/images/logo.svg')" />
+        <img
+          id="navLogo"
+          alt="Nav logo"
+          :src="require('@/assets/images/logo.svg')"
+        />
       </div>
       <div id="logo-text">
         <span class="logo-font" id="logoFont"></span>
       </div>
     </div>
+    <!-- Nav Logo Div Ends -->
+    <!-- Nav Menu Begins -->
     <div id="nav-menu" class="nav-menu-absolute">
       <div class="nav-item">
         <router-link to="/" exact>start with connections</router-link>
       </div>
       <div class="nav-item">
-        <img id="userIcon" alt="you come first" :src="require('@/assets/images/icons/person.svg')" />
+        <img
+          id="userIcon"
+          alt="you come first"
+          :src="require('@/assets/images/icons/person.svg')"
+        />
         <router-link to="/learnmore">what we do</router-link>
       </div>
       <div class="nav-item">
@@ -25,68 +36,70 @@
         <router-link to="/about">contact us</router-link>
       </div>
     </div>
+    <!-- Nav Menu Ends -->
   </nav>
 </template>
 
 <script>
 export default {
-  name: "WebNav",
+  name: 'WebNav',
   mounted() {
-    window.onscroll = this.stickMenu;
+    window.onscroll = this.stickMenu
   },
   methods: {
     stickMenu() {
-      let colorBranchIconSrc = require("@/assets/images/icons/branch.svg");
-      let blackBranchIconSrc = require("@/assets/images/icons/branchAlt.svg");
-      let colorUserIconSrc = require("@/assets/images/icons/person.svg");
-      let blackUserIconSrc = require("@/assets/images/icons/personAlt.svg");
-      let colorNavLogoSrc = require("@/assets/images/logo.svg");
-      let blackNavLogoSrc = require("@/assets/images/logo-alt.svg");
+      let colorBranchIconSrc = require('@/assets/images/icons/branch.svg')
+      let blackBranchIconSrc = require('@/assets/images/icons/branchAlt.svg')
+      let colorUserIconSrc = require('@/assets/images/icons/person.svg')
+      let blackUserIconSrc = require('@/assets/images/icons/personAlt.svg')
+      let colorNavLogoSrc = require('@/assets/images/logo.svg')
+      let blackNavLogoSrc = require('@/assets/images/logo-alt.svg')
 
-      let navMenu = document.getElementById("nav-menu");
+      let navMenu = document.getElementById('nav-menu')
       let pokus =
         window.innerHeight ||
         document.documentElement.clientHeight ||
-        document.body.clientHeight;
-      let sticker = pokus - navMenu.offsetHeight;
-      let userIcon = document.getElementById("userIcon");
-      let branchIcon = document.getElementById("branchIcon");
-      let navLogo = document.getElementById("navLogo");
-      let logoFont = document.getElementById("logoFont");
+        document.body.clientHeight
+      let sticker = pokus - navMenu.offsetHeight
+      let userIcon = document.getElementById('userIcon')
+      let branchIcon = document.getElementById('branchIcon')
+      let navLogo = document.getElementById('navLogo')
+      let logoFont = document.getElementById('logoFont')
 
       if (window.pageYOffset >= sticker) {
-        navMenu.classList.remove("nav-menu-absolute");
-        navMenu.classList.add("sticky");
-        logoFont.classList.add("sticky-logo");
+        navMenu.classList.remove('nav-menu-absolute')
+        navMenu.classList.add('sticky')
+        logoFont.classList.add('sticky-logo')
         //! Icons transition to black icons
-        userIcon.src = blackUserIconSrc;
-        branchIcon.src = blackBranchIconSrc;
-        navLogo.src = blackNavLogoSrc;
+        userIcon.src = blackUserIconSrc
+        branchIcon.src = blackBranchIconSrc
+        navLogo.src = blackNavLogoSrc
       } else {
-        navMenu.classList.add("nav-menu-absolute");
-        navMenu.classList.remove("sticky");
+        navMenu.classList.add('nav-menu-absolute')
+        navMenu.classList.remove('sticky')
         //! Icons transition back to pink color icons
-        userIcon.src = colorUserIconSrc;
-        branchIcon.src = colorBranchIconSrc;
-        navLogo.src = colorNavLogoSrc;
-        logoFont.classList.remove("sticky-logo");
+        userIcon.src = colorUserIconSrc
+        branchIcon.src = colorBranchIconSrc
+        navLogo.src = colorNavLogoSrc
+        logoFont.classList.remove('sticky-logo')
       }
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
+// Outer Nav Container
 #nav-color {
   height: 0px;
   display: block;
   justify-content: space-between;
-  color: #ff52bf;
+  // color: #ff52bf;
 }
 #nav-logo-div {
   display: flex;
   padding: 1.5rem 0px 0.5rem 2rem;
-  width: 160px;
+  width: 6rem; // 160px
 }
 #navLogo {
   padding-right: 0.45rem;
@@ -99,10 +112,7 @@ export default {
   font-size: 1.2rem;
   padding-top: 1.5rem;
 }
-#nav-menu {
-  width: 100%;
-  // padding: 2rem 40px 2rem 0px;
-}
+
 .nav-item {
   margin-left: 1.5rem;
   margin-bottom: 1rem;

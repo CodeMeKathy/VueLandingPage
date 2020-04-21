@@ -6,7 +6,7 @@
           Build The Community
           <br />Your Fans Will Love
         </h1>
-        <p class="hero-sub-title util-margin-bottom-small">
+        <p class="hero-sub-title heading-tertiary util-margin-bottom-small">
           Huddle re-imagines the way we build communities. You have a voice, but
           so does your audience. Create connections with your users as you
           engage in genuine discussion.
@@ -54,13 +54,12 @@ export default {
     display: flex;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
   }
   &-sub-title {
     width: 30rem;
   }
   &-image {
-    width: 80%;
+    width: 20rem;
   }
 }
 
@@ -120,6 +119,30 @@ export default {
   //   width: 350px;
   //   height: 300px;
   // }
+}
+
+/*! Media Queries */
+
+/* Mobile Phones */
+@media (max-width: 414px) {
+  .hero {
+    &-div {
+      .row {
+        flex-direction: column !important;
+      }
+      .col {
+        flex-direction: row !important;
+      }
+    }
+  }
+  .col-1-of-2 {
+    margin: auto 0;
+    padding: 0rem;
+  }
+  .heading-tertiary {
+    width: 20rem;
+    text-align: center;
+  }
 }
 </style>
 

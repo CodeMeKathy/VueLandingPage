@@ -58,7 +58,7 @@ export default {
     display: flex;
     justify-content: space-between;
     padding: 10rem 5rem;
-    height: 25vh;
+    height: 32vh;
     /* background: url("../assets/images/SeaBlue.jpg"); */
     background-color: hsl(192, 100%, 9%);
     color: whitesmoke;
@@ -92,7 +92,7 @@ export default {
     margin-right: 8rem;
   }
   &-col-5 {
-    width: 40rem;
+    width: 20rem;
     font-size: 0.8rem;
   }
   &-row {
@@ -101,5 +101,58 @@ export default {
 }
 .fa-phone-volume {
   transform: skewX(30deg);
+}
+
+/*! Media Queries */
+
+/* Mobile Phones */
+@media (max-width: 414px) {
+  .footer {
+    &-div {
+      display: flex;
+      flex-direction: column !important;
+      // justify-content: space-between;
+      // padding: 10rem 5rem;
+      height: 150vh;
+      /* background: url("../assets/images/SeaBlue.jpg"); */
+      background-color: hsl(192, 100%, 9%);
+      color: whitesmoke;
+      // z-index: 0;
+      // position: relative;
+    }
+    &-logo {
+      height: 1rem;
+    }
+    &-icon {
+      border-radius: 55%;
+      height: 12rem;
+      margin: 0.75rem;
+    }
+    &-col-1 {
+      width: 20rem;
+    }
+    &-col-2 {
+      // width: 18rem;
+      margin: 0rem;
+      margin-right: 0rem;
+    }
+    &-col-3 {
+      // width: 18rem;
+      margin: 1rem;
+      margin-right: 1rem;
+    }
+    &-col-4 {
+      // width: 10rem;
+      margin: 2rem;
+      // margin-right: 8rem;
+    }
+    &-col-5 {
+      width: 10rem;
+      font-size: 0.8rem;
+    }
+    &-row {
+      padding: 0.5rem;
+    }
+  }
 }
 </style>

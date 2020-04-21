@@ -95,16 +95,16 @@ export default {
 // }
 .features {
   &-image-left {
-    width: 40%;
+    width: 20rem;
     float: right;
     margin-top: -13rem;
   }
   &-image-right {
-    width: 40%;
+    width: 20rem;
     float: left;
   }
   &-box {
-    width: 75%;
+    width: 55rem;
     border: 0.5px solid #c3ced8;
     box-shadow: 0 1.5rem 4rem rgba(#808d99, 0.15);
     border-radius: 10px;
@@ -130,6 +130,38 @@ export default {
   }
   &-heading-tertiary {
     color: #808d99;
+  }
+}
+
+/*! Media Queries */
+
+/* Mobile Phones */
+@media (max-width: 414px) {
+  .wrapper.col {
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .features {
+    &-image-left {
+      width: 10rem;
+      // float: right;
+      // margin-top: -13rem;
+    }
+    &-image-right {
+      width: 10rem;
+      float: left;
+    }
+    &-box {
+      width: 16rem;
+      height: 30rem;
+    }
+    &-box-heading-secondary {
+      font-size: 1.2rem;
+    }
+    &-box-heading-tertiary {
+      font-size: 0.85rem;
+      width: 15rem;
+    }
   }
 }
 </style>
