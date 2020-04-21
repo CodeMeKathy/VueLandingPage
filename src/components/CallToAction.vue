@@ -30,7 +30,7 @@ export default {
     place-content: center;
     align-items: center;
     display: flex;
-    width: 55%;
+    width: 55rem;
     border: 0.5px solid #c3ced8;
     box-shadow: 0 1.5rem 4rem rgba(#808d99, 0.15);
     border-radius: 20px;
@@ -54,6 +54,21 @@ export default {
     border-radius: 20px;
     text-decoration: none;
     font-weight: 700;
+  }
+}
+
+/*! Media Queries */
+
+/* Mobile Phones */
+@media (max-width: 414px) {
+  .cta {
+    &-box {
+      width: 15rem;
+      height: 8rem;
+    }
+    .heading-secondary {
+      font-size: 0.89rem;
+    }
   }
 }
 </style>
