@@ -154,6 +154,7 @@ export default {
     &-box {
       width: 16rem;
       height: 30rem;
+      margin: 0 auto;
     }
     &-box-heading-secondary {
       font-size: 1.2rem;

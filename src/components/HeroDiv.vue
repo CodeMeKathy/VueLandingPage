@@ -127,6 +127,7 @@ export default {
 @media (max-width: 414px) {
   .hero {
     &-div {
+      padding: 0 !important;
       .row {
         flex-direction: column !important;
       }
