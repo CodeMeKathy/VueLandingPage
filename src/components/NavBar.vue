@@ -181,4 +181,13 @@ a {
     font-weight: 400;
   }
 }
+
+/*! Media Queries */
+
+/* Mobile Phones */
+@media (max-width: 414px) {
+  div#nav-menu.nav-menu-absolute {
+    display: none;
+  }
+}
 </style>

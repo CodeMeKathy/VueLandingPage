@@ -144,6 +144,33 @@ export default {
     text-align: center;
   }
 }
+
+/*! Media Queries */
+
+/* Mobile Phones */
+@media (max-width: 414px) {
+  .hero-div {
+    padding: 1rem;
+    display: flex;
+    place-items: center;
+  }
+  div.wrapper.row {
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+  }
+  .hero-title {
+    font-size: 1rem;
+    text-align: center;
+  }
+  div.col-left.col-1-of-2 {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .hero-btn {
+    margin-left: 3rem;
+  }
+}
 </style>
 
 // -ms-transform: rotate(180deg); /* IE 9 */ -webkit-transform: rotate(180deg);
