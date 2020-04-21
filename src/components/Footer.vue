@@ -113,7 +113,7 @@ export default {
       flex-direction: column !important;
       // justify-content: space-between;
       // padding: 10rem 5rem;
-      height: 150vh;
+      height: 80vh;
       /* background: url("../assets/images/SeaBlue.jpg"); */
       background-color: hsl(192, 100%, 9%);
       color: whitesmoke;
@@ -129,22 +129,27 @@ export default {
     &-col-1 {
       width: 15rem;
       margin-left: -5rem;
+      // margin-bottom: -4.5rem;
     }
     &-col-2 {
       // width: 18rem;
       margin: 0rem;
       margin-right: 0rem;
       margin-left: -5rem;
+      // margin-bottom: -4.5rem;
+      margin-top: 2.5rem;
     }
     &-col-3 {
       // width: 18rem;
       margin: 1rem;
       margin-right: 1rem;
       margin-left: -5rem;
+      margin-top: 0.1rem;
     }
     &-col-4 {
       text-align: center;
       margin: 2rem;
+      // margin-top: -30rem;
     }
     &-col-5 {
       text-align: center;

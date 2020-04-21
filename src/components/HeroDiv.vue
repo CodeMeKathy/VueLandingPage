@@ -46,6 +46,7 @@ export default {
 
 .hero {
   &-div {
+    // margin-bottom: $util-margin-bottom-medium;
     background-image: url('../assets/images/bg-hero-desktop.svg');
     background-size: cover;
     background-color: hsl(193, 100%, 96%);
@@ -127,7 +128,9 @@ export default {
 @media (max-width: 414px) {
   .hero {
     &-div {
+      place-content: center;
       padding: 0 !important;
+      margin-bottom: $util-margin-bottom-medium;
       .row {
         flex-direction: column !important;
       }

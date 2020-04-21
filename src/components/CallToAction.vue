@@ -30,7 +30,7 @@ export default {
     place-content: center;
     align-items: center;
     display: flex;
-    width: 55rem;
+    width: 40rem;
     border: 0.5px solid #c3ced8;
     box-shadow: 0 1.5rem 4rem rgba(#808d99, 0.15);
     border-radius: 20px;

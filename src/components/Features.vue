@@ -84,7 +84,7 @@ export default {
 .features-div {
   /* background-image: url('../assets/images/Jaipur.jpg'); */
   // background-size: cover;
-  height: 255vh;
+  // height: 255vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -138,23 +138,28 @@ export default {
 /* Mobile Phones */
 @media (max-width: 414px) {
   .wrapper.col {
-    width: 100vw;
-    margin: 0 auto;
+    // width: 100vw;
+    // margin: 0 auto;
+    display: flex;
   }
   .features {
     &-image-left {
-      width: 10rem;
+      width: 16rem;
       // float: right;
-      // margin-top: -13rem;
+      margin-top: 0rem;
     }
     &-image-right {
-      width: 10rem;
-      float: left;
+      width: 16rem;
+      // float: left;
     }
     &-box {
       width: 16rem;
       height: 30rem;
       margin: 0 auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column-reverse !important;
+      margin-bottom: $util-margin-bottom-medium;
     }
     &-box-heading-secondary {
       font-size: 1.2rem;
@@ -163,6 +168,14 @@ export default {
       font-size: 0.85rem;
       width: 15rem;
     }
+  }
+  p {
+    margin: 0 auto;
+  }
+  div.col-1-of-2.left {
+    margin-left: -1rem;
+    width: 16rem;
+    // left: 0;
   }
 }
 </style>
