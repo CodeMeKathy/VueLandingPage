@@ -6,7 +6,7 @@
           Build The Community
           <br />Your Fans Will Love
         </h1>
-        <p class="hero-sub-title util-margin-bottom-small">
+        <p class="hero-sub-title heading-tertiary util-margin-bottom-small">
           Huddle re-imagines the way we build communities. You have a voice, but
           so does your audience. Create connections with your users as you
           engage in genuine discussion.
@@ -46,6 +46,7 @@ export default {
 
 .hero {
   &-div {
+    // margin-bottom: $util-margin-bottom-medium;
     background-image: url('../assets/images/bg-hero-desktop.svg');
     background-size: cover;
     background-color: hsl(193, 100%, 96%);
@@ -54,13 +55,12 @@ export default {
     display: flex;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
   }
   &-sub-title {
     width: 30rem;
   }
   &-image {
-    width: 80%;
+    width: 20rem;
   }
 }
 
@@ -120,6 +120,60 @@ export default {
   //   width: 350px;
   //   height: 300px;
   // }
+}
+
+/*! Media Queries */
+
+/* Mobile Phones */
+@media (max-width: 414px) {
+  .hero {
+    &-div {
+      place-content: center;
+      padding: 0 !important;
+      margin-bottom: $util-margin-bottom-medium;
+      .row {
+        flex-direction: column !important;
+      }
+      .col {
+        flex-direction: row !important;
+      }
+    }
+  }
+  .col-1-of-2 {
+    margin: auto 0;
+    padding: 0rem;
+  }
+  .heading-tertiary {
+    width: 20rem;
+    text-align: center;
+  }
+}
+
+/*! Media Queries */
+
+/* Mobile Phones */
+@media (max-width: 414px) {
+  .hero-div {
+    padding: 1rem;
+    display: flex;
+    place-items: center;
+  }
+  div.wrapper.row {
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+  }
+  .hero-title {
+    font-size: 1rem;
+    text-align: center;
+  }
+  div.col-left.col-1-of-2 {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .hero-btn {
+    margin-left: 3rem;
+  }
 }
 </style>
 
