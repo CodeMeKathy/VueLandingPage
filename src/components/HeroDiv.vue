@@ -21,11 +21,7 @@
         />-->
       </div>
       <div class="col-right col-1-of-2">
-        <img
-          class="hero-image"
-          src="../assets/images/illustration-mockups.svg"
-          alt
-        />
+        <img class="hero-image" src="../assets/images/illustration-mockups.svg" alt />
       </div>
     </div>
   </div>
@@ -33,21 +29,21 @@
 
 <script>
 export default {
-  name: 'HeroDiv'
+  name: "HeroDiv"
   // props: {
 
   // }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import '@/sass/main.scss';
+@import "@/sass/main.scss";
 
 .hero {
   &-div {
     // margin-bottom: $util-margin-bottom-medium;
-    background-image: url('../assets/images/bg-hero-desktop.svg');
+    background-image: url("../assets/images/bg-hero-desktop.svg");
     background-size: cover;
     background-color: hsl(193, 100%, 96%);
     height: 100vh;
@@ -75,7 +71,8 @@ export default {
 }
 .wrapper {
   display: flex;
-  // width: 100vw;
+  width: 100vw;
+  justify-content: center;
 }
 .row {
   flex-direction: row !important;
