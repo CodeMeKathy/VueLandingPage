@@ -47,7 +47,7 @@ export default {
     background-size: cover;
     background-color: hsl(193, 100%, 96%);
     height: 100vh;
-    width: 98vw;
+    width: 99.2vw;
     display: flex;
     display: -ms-flexbox;
     display: -webkit-flex;
