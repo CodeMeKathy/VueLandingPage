@@ -112,6 +112,8 @@ export default {
 //   height: 300px;
 // }
 
+//! Media Queries
+
 @media only screen and (max-width: 947px) {
   // img.hero-image {
   //   width: 350px;
@@ -119,7 +121,7 @@ export default {
   // }
 }
 
-/*! Media Queries */
+//!  Media Queries
 
 /* Mobile Phones */
 @media (max-width: 414px) {
@@ -128,6 +130,10 @@ export default {
       place-content: center;
       padding: 0 !important;
       margin-bottom: $util-margin-bottom-medium;
+      padding: 1rem;
+      display: flex;
+      place-items: center;
+      width: 99.9vw;
       .row {
         flex-direction: column !important;
       }
@@ -135,25 +141,9 @@ export default {
         flex-direction: row !important;
       }
     }
-  }
-  .col-1-of-2 {
-    margin: auto 0;
-    padding: 0rem;
-  }
-  .heading-tertiary {
-    width: 20rem;
-    text-align: center;
-  }
-}
-
-/*! Media Queries */
-
-/* Mobile Phones */
-@media (max-width: 414px) {
-  .hero-div {
-    padding: 1rem;
-    display: flex;
-    place-items: center;
+    &-image {
+      margin-left: 0.75rem;
+    }
   }
   div.wrapper.row {
     margin-top: 2rem;
@@ -170,6 +160,14 @@ export default {
   }
   .hero-btn {
     margin-left: 3rem;
+  }
+  .col-1-of-2 {
+    margin: auto 0;
+    padding: 0rem;
+  }
+  .heading-tertiary {
+    width: 20rem;
+    text-align: center;
   }
 }
 </style>

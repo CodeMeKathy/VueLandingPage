@@ -123,10 +123,13 @@ export default {
   }
 }
 
-/*! Media Queries */
+//!  Media Queries
 
 /* Mobile Phones */
 @media (max-width: 414px) {
+  .features-div {
+    width: 99.7vw;
+  }
   .wrapper.col {
     // width: 100vw;
     // margin: 0 auto;
@@ -163,7 +166,7 @@ export default {
     margin: 0 auto;
   }
   div.col-1-of-2.left {
-    margin-left: -1rem;
+    // margin-left: -1rem;
     width: 16rem;
     // left: 0;
   }
