@@ -114,16 +114,35 @@ export default {
 
 //! Media Queries
 
-@media only screen and (max-width: 947px) {
-  // img.hero-image {
-  //   width: 350px;
-  //   height: 300px;
-  // }
+// iPad && iPad Pro Portrait && Landscape
+@media only screen and (max-width: 1366px) and (min-width: 415px) {
+  .hero {
+    &-div {
+      background-color: red;
+    }
+  }
 }
-
-//!  Media Queries
+// @media only screen and (max-width: 415px) and (min-width: 1366px) {
+//   .hero {
+//     &-div {
+//       background-color: red;
+//     }
+//   }
+// }
 
 /* Mobile Phones */
+
+// Mobile Landscape
+@media only screen and (max-width: 812px) and (min-width: 415px) {
+  .hero {
+    &-div {
+      background-color: purple;
+      // height: 136vh;
+      // width: 135vw;
+    }
+  }
+}
+
 @media (max-width: 414px) {
   .hero {
     &-div {

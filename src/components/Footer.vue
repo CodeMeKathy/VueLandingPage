@@ -37,8 +37,9 @@
       <i class="footer-icon fab fa-twitter-square"></i>
       <i class="footer-icon fab fa-instagram-square"></i>
       <div class="col footer-col-5">
-        © Copyright 2020 Huddle <br />
-        Made by CodeMeKathy <br />&& Designed by Frontend Mentors
+        © Copyright 2020 Huddle
+        <br />Made by CodeMeKathy
+        <br />&& Designed by Frontend Mentors
       </div>
     </div>
   </div>
@@ -46,12 +47,12 @@
 
 <script>
 export default {
-  name: 'Footer'
-}
+  name: "Footer"
+};
 </script>
 
 <style scoped lang="scss">
-@import '@/sass/main.scss';
+@import "@/sass/main.scss";
 
 .footer {
   &-div {
@@ -107,7 +108,7 @@ export default {
   transform: skewX(30deg);
 }
 
-/*! Media Queries */
+//! Media Queries
 
 /* Mobile Phones */
 @media (max-width: 414px) {
@@ -164,6 +165,39 @@ export default {
     }
     &-row {
       padding: 0.5rem;
+    }
+  }
+}
+
+// Mobile Landscape
+@media only screen and (max-width: 812px) and (min-width: 415px) {
+  .footer {
+    &-icon {
+      height: 2rem;
+    }
+    &-col-1 {
+      width: 15rem;
+      margin-left: -5rem;
+      // margin-bottom: -4.5rem;
+    }
+    &-col-2 {
+    //   // width: 18rem;
+    //   margin: 0rem;
+    //   margin-right: 0rem;
+      margin-left: 7rem;
+    //   // margin-bottom: -4.5rem;
+    //   margin-top: 2.5rem;
+    }
+    &-col-3 {
+    //   // width: 18rem;
+    //   margin: 1rem;
+      margin-right: 1rem;
+      margin-left: 3rem;
+    //   margin-top: 0.1rem;
+    }
+    &-col-5 {
+      width: 10rem;
+      font-size: 0.8rem;
     }
   }
 }
