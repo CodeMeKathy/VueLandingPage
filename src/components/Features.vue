@@ -5,9 +5,7 @@
         <div class="col-1-of-2">
           <h3
             class="features-box-heading-secondary heading-secondary util-margin-bottom-small"
-          >
-            Grow Together
-          </h3>
+          >Grow Together</h3>
           <p class="features-box-heading-tertiary heading-tertiary">
             Generate meaningful discussions with your audience and build a
             strong, loyal community. Think of the insightful conversations you
@@ -18,7 +16,7 @@
           <img
             src="../assets/images/illustration-grow-together.svg"
             class="features-image-left"
-            alt=""
+            alt
           />
         </div>
       </div>
@@ -26,9 +24,7 @@
         <div class="col-1-of-2 left">
           <h3
             class="features-box-heading-secondary heading-secondary util-margin-bottom-small"
-          >
-            Flowing Conversations
-          </h3>
+          >Flowing Conversations</h3>
           <p class="features-box-heading-tertiary heading-tertiary">
             You wouldn't paginate a conversation in real life, so why do it
             online? Our threads have just-in-time loading for a more natural
@@ -39,7 +35,7 @@
           <img
             src="../assets/images/illustration-flowing-conversation.svg"
             class="features-image-right"
-            alt=""
+            alt
           />
         </div>
       </div>
@@ -47,9 +43,7 @@
         <div class="col-1-of-2">
           <h3
             class="features-box-heading-secondary heading-secondary util-margin-bottom-small"
-          >
-            Your Users
-          </h3>
+          >Your Users</h3>
           <p class="features-box-heading-tertiary heading-tertiary">
             It takes no time at all to integrate Huddle with your app's
             authentication solution. This means, once signed in to your app,
@@ -57,11 +51,7 @@
           </p>
         </div>
         <div class="col-1-of-2">
-          <img
-            src="../assets/images/illustration-your-users.svg"
-            class="features-image-left"
-            alt=""
-          />
+          <img src="../assets/images/illustration-your-users.svg" class="features-image-left" alt />
         </div>
       </div>
     </div>
@@ -70,22 +60,22 @@
 
 <script>
 export default {
-  name: 'Features'
+  name: "Features"
   // props: {
 
   // }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import '@/sass/main.scss';
+@import "@/sass/main.scss";
 
 .features-div {
   /* background-image: url('../assets/images/Jaipur.jpg'); */
   // background-size: cover;
   // height: 255vh;
-  width: 100vw;
+  width: 98vw;
   display: flex;
   justify-content: center;
 }
