@@ -2,9 +2,7 @@
   <div class="cta wrapper">
     <div class="row">
       <div class="col cta-box">
-        <h3 class="heading-secondary util-margin-bottom-small ">
-          Ready To Build Your Community?
-        </h3>
+        <h3 class="heading-secondary util-margin-bottom-small">Ready To Build Your Community?</h3>
         <a href="#" class="cta-btn">Get Started For Free</a>
       </div>
     </div>
@@ -12,12 +10,12 @@
 </template>
 <script>
 export default {
-  name: 'CallToAction'
-}
+  name: "CallToAction"
+};
 </script>
 
 <style scoped lang="scss">
-@import '@/sass/main.scss';
+@import "@/sass/main.scss";
 
 .cta.wrapper {
   margin-bottom: -7rem;
@@ -57,7 +55,7 @@ export default {
   }
 }
 
-/*! Media Queries */
+//!  Media Queries
 
 /* Mobile Phones */
 @media (max-width: 414px) {
@@ -68,6 +66,15 @@ export default {
     }
     .heading-secondary {
       font-size: 0.89rem;
+    }
+  }
+}
+
+// Mobile Landscape
+@media only screen and (max-width: 812px) and (min-width: 415px) {
+  .cta {
+    &-box {
+      width: 25rem;
     }
   }
 }

@@ -175,9 +175,9 @@ export default {
 // Mobile Landscape
 @media only screen and (max-width: 812px) and (min-width: 415px) {
   .features {
-    // &-div {
-    //   width: auto;
-    // }
+    &-div {
+      width: auto;
+    }
     &-box {
       width: 85vw;
       height: 75vh;
