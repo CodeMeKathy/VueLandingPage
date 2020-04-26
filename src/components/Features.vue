@@ -127,22 +127,22 @@ export default {
 
 /* Mobile Phones */
 @media (max-width: 414px) {
-  .features-div {
-    width: 99.7vw;
-  }
   .wrapper.col {
     // width: 100vw;
     // margin: 0 auto;
     display: flex;
   }
   .features {
+    &-div {
+      width: 99.7vw;
+    }
     &-image-left {
-      width: 16rem;
+      width: 10rem;
       // float: right;
       margin-top: 0rem;
     }
     &-image-right {
-      width: 16rem;
+      width: 10rem;
       // float: left;
     }
     &-box {
@@ -169,6 +169,36 @@ export default {
     // margin-left: -1rem;
     width: 16rem;
     // left: 0;
+  }
+}
+
+// Mobile Landscape
+@media only screen and (max-width: 812px) and (min-width: 415px) {
+  .features {
+    // &-div {
+    //   width: auto;
+    // }
+    &-box {
+      width: 85vw;
+      height: 75vh;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column-reverse !important;
+      margin-bottom: $util-margin-bottom-medium;
+    }
+    &-image-left {
+      width: 16rem;
+      // float: right;
+      margin-top: 0rem;
+    }
+    &-image-right {
+      width: 16rem;
+      // float: left;
+    }
+  }
+  div.wrapper.col {
+    width: auto;
   }
 }
 </style>

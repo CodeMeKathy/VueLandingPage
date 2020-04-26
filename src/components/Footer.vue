@@ -173,7 +173,10 @@ export default {
 @media only screen and (max-width: 812px) and (min-width: 415px) {
   .footer {
     &-icon {
-      height: 2rem;
+      height: auto;
+      margin-left: 0;
+      margin-top: 1.5rem;
+      align-self: center;
     }
     &-col-1 {
       width: 15rem;
@@ -181,22 +184,28 @@ export default {
       // margin-bottom: -4.5rem;
     }
     &-col-2 {
-    //   // width: 18rem;
-    //   margin: 0rem;
-    //   margin-right: 0rem;
+      //   // width: 18rem;
+      //   margin: 0rem;
+      //   margin-right: 0rem;
       margin-left: 7rem;
-    //   // margin-bottom: -4.5rem;
-    //   margin-top: 2.5rem;
+      //   // margin-bottom: -4.5rem;
+      //   margin-top: 2.5rem;
     }
     &-col-3 {
-    //   // width: 18rem;
-    //   margin: 1rem;
+      //   // width: 18rem;
+      //   margin: 1rem;
       margin-right: 1rem;
       margin-left: 3rem;
-    //   margin-top: 0.1rem;
+      //   margin-top: 0.1rem;
+    }
+    &-col-4 {
+      margin-left: 2rem;
+      // text-align: center;
+      // margin: 2rem;
+      // margin-top: -30rem;
     }
     &-col-5 {
-      width: 10rem;
+      width: 13rem;
       font-size: 0.8rem;
     }
   }

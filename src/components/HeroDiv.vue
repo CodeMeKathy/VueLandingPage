@@ -137,12 +137,16 @@ export default {
   .hero {
     &-div {
       background-color: purple;
-      // height: 136vh;
-      // width: 135vw;
+      height: 136vh;
+      width: auto;
     }
   }
+    .col-1-of-2 {
+    margin: auto 0;
+    padding: 0;
+    }
 }
-
+// Mobile Portrait
 @media (max-width: 414px) {
   .hero {
     &-div {
